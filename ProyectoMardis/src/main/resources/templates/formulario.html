@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Verificación Pico y Placa</title>
+</head>
+<body>
+    <h1>Verificación Pico y Placa</h1>
+    <form th:action="@{/verificar}" th:object="${consulta}" method="post">
+        <label>Placa: <input type="text" th:field="*{placa}" /></label><br>
+        <label>Hora (HH:mm): <input type="text" th:field="*{hora}" /></label><br>
+        <label>Fecha (dd/MM/yyyy): <input type="text" th:field="*{fecha}" /></label><br>
+        <button type="submit">Verificar</button>
+    </form>
+</body>
+</html>

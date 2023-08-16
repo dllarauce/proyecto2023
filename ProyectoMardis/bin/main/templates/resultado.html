@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultado Pico y Placa</title>
+</head>
+<body>
+    <h1>Resultado Pico y Placa</h1>
+    <p th:if="${puedeCircular}">El vehículo puede circular en la hora y fecha ingresadas.</p>
+    <p th:unless="${puedeCircular}">El vehículo NO puede circular en la hora y fecha ingresadas.</p>
+</body>
+</html>
